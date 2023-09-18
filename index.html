@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="" href="index.html" title="" type="" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>iPhone</title>
+    <script type="text/javascript" charset="utf-8">
+      function myFunction() {
+        
+        let togle = document.body;
+        
+        togle.classList.toggle("warna")
+      }
+    </script>
+    <style type="text/css" media="all">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: #2c2828;
+        transition: .4s;
+        font-family: Sans-Serif;
+      }
+      .warna {
+        background-color: white;
+      }
+      nav {
+        width: 100%;
+        position: fixed;
+        height: 50px;
+        z-index: 2;
+        margin-top: -100px;
+        display: flex;
+        box-shadow: 0 0 20px 0;
+        align-items: center;
+        justify-content: center;
+        background-color: #333;
+      }
+      .active {
+        color: gray;
+      }
+      ul {
+        gap: 20px;
+        display: flex;
+        align-items: center;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        color: white;
+        transition: .5s;
+        text-decoration: none;
+      }
+      a:hover {
+        color: gray;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+      .logo1 {
+        height: 50px;
+        display: flex;
+      }
+      .content {
+        width: 80%;
+        justify-content: center;
+        height: 700px;
+        gap: 50px;
+        align-items: center;
+        flex-flow: row wrap;
+        display: flex;
+        margin: 100px auto;
+      }
+      .content2 {
+        transition: .4s;
+        background-color: #d0d0d0;
+        overflow: hidden;
+        width: 200px;
+        height: 395px;
+        text-align: center;
+      }
+      .content2:hover {
+        padding: 15px;
+        color: white;
+        transform: scaleY(1.1);
+        text-align: center;
+        box-shadow: 0 0 20px 0 white;
+      
+        border-radius: 20px;
+      }
+      h3 {
+        padding: 5px;
+        color: black;
+      }
+      h3:hover {
+        padding: 5px;
+      }
+      button {
+        width: 100%;
+        color: white;
+        transition: .5s;
+      }
+      button:hover {
+        width: 100%;
+        border: 2px solid gray;
+        border-radius: 5px;
+        background-color: #00ee007d;
+      }
+      .ip1 {
+        height: 300px;
+        display: flex;
+        border-radius: 10px;
+        transition: .5s;
+      }
+      .ip1:hover {
+        box-shadow: 0 0 20px 0 white;
+      }
+      i {
+        font-size: 25px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+       <img onclick="myFunction()" src="logo.png" alt="" />
+
+      <ul>
+        <img class="logo1" src="logo1.png" alt="">
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <a href="#"><i class="ph ph-shopping-cart-simple"></i></a>
+      </ul>
+    </nav>
+    <div class="content">
+      <div class="content2">
+      <img class="ip1" src="IPhone x.jpg" alt=""  />
+      <a href="Beli.html"><button><i class="ph ph-shopping-cart-simple"></i><h3>$1.000</h3></button></a>
+      <h3>iPhone X</h3>
+      </div>
+      <div class="content2">
+      <img class="ip1" src="iPhone Xr.jpg" alt="" />
+      <button><i class="ph ph-shopping-cart-simple"></i><h3>$600</h3></button>
+      <h3>iPhone XR</h3>
+      </div>
+      <div class="content2">
+      <img class="ip1" src="iPhone14 pro.jpg" al="" />
+      <button><i class="ph ph-shopping-cart-simple"></i><h3>$40.000</h3></button>
+      <h3>iPhone 14 Pro</h3>
+      </div>
+
+    </div>
+  </body>
+</html>
